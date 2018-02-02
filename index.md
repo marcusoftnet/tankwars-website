@@ -5,7 +5,8 @@ body_class: home
 ---
 # Tankwars
 
-* [Run a match](pages/match.html)
-* [API Docs](pages/api.html)
-* [Test your API](pages/test.html)
-* [Tank Brigade](pages/tank_brigade.html)
+* [StarterKit](/tankwars/pages/starterkit.html)
+* [Run a match](/tankwars/pages/match.html)
+* [API Docs](/tankwars/pages/api.html)
+* [Test your API](/tankwars/pages/test.html)
+* [Tank Brigade](/tankwars/pages/tank_brigade.html)

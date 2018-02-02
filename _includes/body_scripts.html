@@ -5,9 +5,9 @@
 </script>
 {% if jekyll.environment == "production" %}
 
-<script src="/v/main-{{site.asset_version}}.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/v/main-{{site.asset_version}}.js"></script>
 {% else %}
 
-<script src="/v/dev-{{site.asset_version}}.js"></script>
+<script src="{{site.url}}{{site.baseurl}}/v/dev-{{site.asset_version}}.js"></script>
 
 {% endif %}

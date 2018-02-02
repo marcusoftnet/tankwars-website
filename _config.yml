@@ -1,13 +1,15 @@
 # Site settings
-title: "Serverless Camp: Tank Wars"
+title: "MobProgramming Boston 2018: Tank Wars"
 description: "Learn how to develop serverless cloud functions by participating in cloud tank warfare"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tankwars.serverless.camp" # the base hostname & protocol for your site
-github_username: serverlesscamp 
+baseurl: "/tankwars" # the subpath of your site, e.g. /blog
+url: "http://www.marcusoft.net" # the base hostname & protocol for your site
+github_username: marcusoftnet
+twitter: marcusoftnet
+
 # Build settings
 markdown: kramdown
 exclude: ['*.sh', 'template', 'node_modules', 'spec']
 scripts: ['compiled.js'] # ['scripts/tw.js', 'scripts/promising-xhr.js', 'scripts/mini-emit.js', 'scripts/tankwars-client-api.js', 'scripts/tankwars-model.js', 'scripts/site.js']
-social_header: "/assets/tank-drawn.png"
+social_header: "/tankwars/assets/tank-drawn.png"
 s3_bucket: tankwars.serverless.camp
 cloudfront_dist: E1D2P34CXUH940

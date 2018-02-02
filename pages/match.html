@@ -14,18 +14,18 @@ body_class: match
 	<div class="winner modal column">
 		<div class="win-container">
 			<h1 role="outcome"></h1>
-			<button role="startAgain">Start Again</button> 
-			<button role="hideResults">Back to options</button> 
+			<button role="startAgain">Start Again</button>
+			<button role="hideResults">Back to options</button>
 		</div>
 	</div>
 	<div role="advancedOptions" class="hide-when-active hide">
 	{%include map_options.html %}
 	</div>
 	<div class="row hide-when-active">
-		<label>Tank 1 API URL:</label> <input role="tank1Api" class="long" placeholder="https://abc/def" /> <a href="https://tankwars.serverless.camp/pages/tank_brigade.html">Tank Brigade</a>
+		<label>Tank 1 API URL:</label> <input role="tank1Api" class="long" placeholder="https://abc/def" /> <a href="{{site.url}}{{site.baseurl}}/pages/tank_brigade.html">Tank Brigade</a>
 	</div>
 	<div class="row hide-when-active ">
-		<label>Tank 2 API URL:</label> <input role="tank2Api" class="long" placeholder="https://abc/def" /> <a href="https://tankwars.serverless.camp/pages/tank_brigade.html">Tank Brigade</a>
+		<label>Tank 2 API URL:</label> <input role="tank2Api" class="long" placeholder="https://abc/def" /> <a href="{{site.url}}{{site.baseurl}}/pages/tank_brigade.html">Tank Brigade</a>
 	</div>
 	<div>
 		<button role="toggleAdvancedOptions" class="hide-when-active">Advanced options</button>
