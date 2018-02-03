@@ -1,3 +1,9 @@
+---
+layout: default
+title: StarterKit
+excerpt: A description on how to use the starter kit
+---
+
 # Tankwars starter kit
 
 This is a way to get started faster with building your first tank for the [Boston Mob Programming Conference Tank War](http://www.marcusoft.net/tankwars)
