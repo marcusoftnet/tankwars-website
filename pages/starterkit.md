@@ -15,10 +15,12 @@ Install [Docker](https://www.docker.com/community-edition) here. Before you go t
 
 3. Open a terminal / command prompt in that directory
 
-4. Run the following commands
+4. Run the following commands.
 
-  `docker build -t tankwars .`
-  `docker run -it --name tankwars --mount type=bind,source="$(pwd)",target=/tank tankwars /bin/bash`
+  ```bash
+  docker build -t tankwars .
+  docker run -it --name tankwars --mount type=bind,source="$(pwd)",target=/tank tankwars /bin/bash
+  ```
 
 5. That have put you inside a shiny new docker container.
   * You will see something like `root@11111111:/tank#` and a blinking prompt
