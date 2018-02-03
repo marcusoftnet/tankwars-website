@@ -83,6 +83,6 @@ The [API is well documented](http://www.marcusoft.net/tankwars/pages/api.html) a
 
 ## If you want to clean up after the workshop
 
-* stop all containers: `docker kill $(docker ps -q)`
-* remove all containers: `docker rm $(docker ps -a -q)`
-* remove all docker images: `docker rmi $(docker images -q)`
+1. Exit the tankwars container with `exit` in the container (`root@11111111:/tank#`)
+1. remove the container: `docker rm tankwars`
+1. remove the docker image: `docker rmi tankwars`
