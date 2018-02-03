@@ -1,10 +1,3 @@
----
-layout: default
-title: StarterKit
-header: true
-body_class: api
----
-
 # Tankwars starter kit
 
 This is a way to get started faster with building your first tank for the [Boston Mob Programming Conference Tank War](http://www.marcusoft.net/tankwars)
@@ -22,24 +15,25 @@ Install [Docker](https://www.docker.com/community-edition) here. Before you go t
 
 3. Open a terminal / command prompt in that directory
 
-4. run the following commands
+4. Run the following commands
   1. `docker build -t tankwars .`
-  2. *{wait for ca 250 mb to download}*
-  3. `docker exec -it tankwars /bin/bash `
+  2. *{wait for ca 264.3 mb to download}*
+  3. `docker run -it --name tankwars --mount type=bind,source="$(pwd)",target=/tank tankwars /bin/bash`
 
-5. That have put you inside a shiny new docker container. You will see something like `root@205c2a318c6f:/tank#` and a blinking prompt
+5. That have put you inside a shiny new docker container.
+  * You will see something like `root@11111111:/tank#` and a blinking prompt
 
-6. Your tank is deployed! It's simple (just fires without moving), but it exists.
+6. Not only that... Your tank is already deployed and ready to be used! It's very simple sure (just fires without moving), but it exists on the interwebs.
 
-   1. The URL to your tank has been printed in the terminal. You can see it in the last output. It looks something, but not exactly, like this:
+  1. The URL to your tank has been printed in the terminal. You can see it in the last output. It looks something, but not exactly, like this:
 
-      ```javascript
-        "api": {
-          "id": "dijyb021g4",
-          "module": "api",
-          "url": "https://dijyb021g4.execute-api.us-east-1.amazonaws.com/latest"
-        }
-      ```
+    ```json
+      "api": {
+        "id": "dijyb021g4",
+        "module": "api",
+        "url": "https://dijyb021g4.execute-api.us-east-1.amazonaws.com/latest"
+      }
+    ```
 
    2. **That url is important** - so make a note of it.
 
@@ -51,14 +45,14 @@ Install [Docker](https://www.docker.com/community-edition) here. Before you go t
 
 9. Edit the name of the tank and your team in the `api.js`-file
 
-   ```javascript
-   api.get('/info', function () {
-     return {
-       name: '[your cool tank name here]', // <== Change this string
-       owner: '[your team name]' // <== Change this string
-     }
-   })
-   ```
+  ```javascript
+  api.get('/info', function () {
+    return {
+      name: '[your cool tank name here]', // <== Change this string
+      owner: '[your team name]' // <== Change this string
+    }
+  })
+  ```
 
 10. Once you saved that file, go back to the terminal / command prompt in the container (`root@205c2a318c6f:/tank#`) and deploy your change `npm run deploy`
 
@@ -81,15 +75,6 @@ The [API is well documented](http://www.marcusoft.net/tankwars/pages/api.html) a
 
 ## If you want to clean up after the workshop
 
-stop all containers:
-`docker kill $(docker ps -q)`
-
-remove all containers
-`docker rm $(docker ps -a -q)`
-
-remove all docker images
-`docker rmi $(docker images -q)`
-
-
-
-docker kill $(docker ps -q) && docker rm $(docker ps -a -q)
+* stop all containers: `docker kill $(docker ps -q)`
+* remove all containers: `docker rm $(docker ps -a -q)`
+* remove all docker images: `docker rmi $(docker images -q)`
