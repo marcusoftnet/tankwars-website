@@ -1,3 +1,9 @@
+---
+layout: default
+title: Starter kit
+header: true
+---
+
 # Get your tank shooting in minutes
 
 Ah, well... first you need [Docker](https://www.docker.com/community-edition) installed. Do that before the workshop
