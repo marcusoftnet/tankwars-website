@@ -8,7 +8,7 @@ header: true
 
 Ah, well... first you need [Docker](https://www.docker.com/community-edition) installed. Do that before the workshop
 
-* <a href="{{site.url}}{{site.baseurl}}/assets/tankwars-starter-kit.zip/" download>Download the files for the starter kit</a>
+* <a href="{{site.url}}{{site.baseurl}}/assets/tankwars-starter-kit.zip" download>Download the files for the starter kit</a>
 and unzip them in suitable folder `/Projects/tankwars-starter-kit` for example
 
 * Open an editor to that folder and open the `tank.js`-file.
