@@ -35,7 +35,8 @@ Great - now let's deploy your tank to the clouds.
 * Wait a few minutes, but before long you will find yourself in the container. It will look something like this `root@11111111:/tank#`
 * Let's create the tank for you by running this command in the container: `npm run create`
 * This will take a minute or two, since we need to install stuff before we deploy. But soon...
-* **Much success!** Your tank is deployed on the internet. You need to copy the URL to the tank from the output of the last command. It looks something like this:
+
+**Much success!** Your tank is deployed on the internet. You need to copy the URL to the tank from the output of the last command. It looks something like this:
   ```json
   "api": {
       "id": "dijyb021g4",
@@ -45,7 +46,7 @@ Great - now let's deploy your tank to the clouds.
   ```
 
 This tank works... but honestly it's pretty stupid. It just fires all the time. You need to improve the code in `tank.js`-file.
-But test it in a [match](http://www.marcusoft.net/tankwars/pages/match.html) and you'll see how it works.
+But test it in a [match](http://www.marcusoft.net/tankwars/pages/match.html) and you'll see how it stands up to others.
 
 Better hurry up to make it better. We will run matches every 20 minutes.
 
