@@ -5,14 +5,14 @@ header: true
 body_class: api
 ---
 
-# API 
+# API
 
 Tanks are simple REST APIs with two endpoints:
 
 * `/info`: should provide basic information on a tank. See [Info Endpoint](#info) for more information.
 * `/command`: will receive map information, and needs to reply with a command for the tank. See the [Command Endpoint](#command) for more information
 
-Check out the [Serverless Camp Example Tanks](https://github.com/serverlesscamp/tankwars-example-tanks) for some simple, fully working examples. 
+Check out the [Serverless Camp Example Tanks](https://github.com/serverlesscamp/tankwars-example-tanks) for some simple, fully working examples.
 
 # Info endpoint {#info}
 
@@ -44,7 +44,7 @@ You need to reply with `application/json` content type, and a JSON structure
 valid commands are:
 
 * `turn-left`: turn 90 degrees counter-clockwise
-* `turn-right`: turn 90 degrees clockwise 
+* `turn-right`: turn 90 degrees clockwise
 * `forward`: move one field in the direction the tank is facing
 * `reverse`: move one field in the opposite direction
 * `fire`: shoot in the direction the tank is facing
@@ -59,14 +59,14 @@ Your endpoint will get an `application/json` POST request, containing the follow
 {%highlight js%}
 {
   matchId: string, // unique ID for each match
-  mapWidth: int, 
-  mapHeight: int, 
+  mapWidth: int,
+  mapHeight: int,
   suddenDeath: int, // number of turns left until sudden death starts
   wallDamage: int, // how much damage does it cause to run into a wall
   tankDamage: int, // how much damage does it cause to run into a tank -- also, how much damage your tank causes when it runs into a wall
   weaponDamage: int, // how much damage does it cause to hit something with a bullet
-  visibility: int, // how far, in fields, you can see on your radar 
-  weaponRange: int, // how far, in fields, you can hit with a bullet 
+  visibility: int, // how far, in fields, you can see on your radar
+  weaponRange: int, // how far, in fields, you can hit with a bullet
   you: TANK, // your tank info -- see the tank structure below
   enemies: [TANK], // array. enemy tank info. see the tank structure below
   walls: [WALL], // array. visible walls. see the wall structure below
@@ -91,10 +91,10 @@ The information on enemy tanks will be in the `enemies` key of the map your comm
 #### Full info (your tank, enemies on your radar)
 
 {%highlight js%}
-{ 
-  x: int, 
-  y: int, 
-  strength: int, 
+{
+  x: int,
+  y: int,
+  strength: int,
   direction: string, /* 'left', 'right', 'top', 'bottom' */
   ammo: int
 }
@@ -105,10 +105,10 @@ The information on enemy tanks will be in the `enemies` key of the map your comm
 Bumping into a wall causes damage. You can only see walls in your visibility zone:
 
 {%highlight js%}
-{ 
-  x: int, 
-  y: int, 
-  strength: int 
+{
+  x: int,
+  y: int,
+  strength: int
 }
 {%endhighlight %}
 
@@ -119,8 +119,8 @@ Bumping into a wall causes damage. You can only see walls in your visibility zon
 Staying in fire causes damage. You can only see fire fields in your visibility zone. During sudden death, fire expands quickly.
 
 {%highlight js%}
-{ 
-  x: int, 
+{
+  x: int,
   y: int
 }
 
