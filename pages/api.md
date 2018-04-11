@@ -12,7 +12,6 @@ Tanks are simple REST APIs with two endpoints:
 * `/info`: should provide basic information on a tank. See [Info Endpoint](#info) for more information.
 * `/command`: will receive map information, and needs to reply with a command for the tank. See the [Command Endpoint](#command) for more information
 
-Check out the [Serverless Camp Example Tanks](https://github.com/serverlesscamp/tankwars-example-tanks) for some simple, fully working examples.
 
 # Info endpoint {#info}
 
