@@ -9,7 +9,7 @@ header: true
 Ah, well... first you need [Docker](https://www.docker.com/community-edition) installed. Do that before the workshop.
 
 Now let's get the starter kit and pick a name:
-* <a href="{{site.url}}{{site.baseurl}}/assets/tankwars-starter-kit.zip" download>Download the files for the starter kit</a>
+* Download the files for the starter kit
 and unzip them in suitable folder `/Projects/tankwars-starter-kit` for example
 * Open an editor to that folder and open the `tank.js`-file.
   * Edit the name and description of your tank to match your mob
